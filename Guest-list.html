@@ -5,28 +5,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
         <title>Document</title>    
-        <script src="/index.js" defer></script>  
+        <script src="guest-list.js" defer></script>  
     </head>  
     <body>    
         <main id="app">      
             <form id="guest-input">        
                 <div>          
                     <label for="name">Guest Name</label>          
-                    <input name="name" type="text" id="name" />        
+                    <input type="text" name="guestFullName" 
+          />   
                 </div>        
                 <div>      
-                    <button type="submit" name="end">Add guest @ list end</button>    
+                    <button  name="push">Add guest @ list end</button>    
                 </div>        
                 <div>          
-                    <button type="submit" name="start">Add guest @ list start</button>
+                    <button  name="unshift">Add guest @ list start</button>
                 </div>        
                 <div>          
-                    <button type="submit" name="remove-1">Remove first</button>      
+                    <button  name="shift">Remove first</button>      
                 </div>        
                 <div>          
-                    <button type="submit" name="remove-n">Remove last</button>
+                    <button  name="pop">Remove last</button>
                 </div>        
-                <button type="submit" name="reverse">Reverse list</button>      
+                <div>
+                    <button  name="reverse">Reverse list</button>    
+                </div>
+                <div class="guest-list">
+                    <div><h2 class="guest-list__title">Guest List:</h2></div>
+                  </div>   
             </form>    
         </main>  
     </body>
