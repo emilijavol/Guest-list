@@ -20,6 +20,14 @@ document.querySelectorAll("button").forEach((button) => {
         const reversedArray = guestList.reverse();
         guestList = reversedArray;
         break;
+        case "sort-a-z":
+            guestList.sort((a,z) =>
+             a.localeCompare(z)
+            );
+        case "sort-z-a":
+            guestList.sort((a,z) =>
+            z.localeCompare(a)
+            );
      }
      window.localStorage.setItem("guestList", JSON.stringify(guestList));
     updateGuestList();
@@ -45,4 +53,3 @@ function updateGuestList() {
       updateGuestList();
     }
   });
-  
